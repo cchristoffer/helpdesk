@@ -43,6 +43,12 @@ h3 {
   text-align: center;
 }
 
+.freshLogo {
+  vertical-align: middle;
+  max-width: 3rem;
+}
+
+
 .header {
   display: flex;
   justify-content: space-between;
