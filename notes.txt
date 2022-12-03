@@ -1,3 +1,9 @@
 git add .
 
 git commit -m 'Initial commit'
+
+
+npx create-react-app@latest --template redux
+
+//Remove git repo with
+rm -fg .git
