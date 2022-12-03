@@ -12,6 +12,10 @@ const ticketSchema = mongoose.Schema(
       required: [true, "Var vänlig välj kategori"],
       enum: ["M3", "Drift", "M3 drift", "Nätverk", "Hårdvara", "Annat"],
     },
+    title: {
+      type: String,
+      required: [true, "Var vänlig ange en titel"],
+    },
     description: {
       type: String,
       required: [true, "Var vänlig ange en beskrivning av problemet"],
