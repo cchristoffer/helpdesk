@@ -6,6 +6,10 @@ function Home() {
     <>
       <section className="heading">
         <h1>Behöver du hjälp eller?</h1>
+        <img
+          src="https://www.meme-arsenal.com/memes/8f0de2d62feed520ca30cda1e9293b82.jpg"
+          alt=""
+        />
         <p>Var vänlig välj ett av nedan alternativ</p>
       </section>
 

@@ -20,10 +20,11 @@ function Header() {
         <Link to="/">
           <img
             className="freshLogo"
-            src="https://play-lh.googleusercontent.com/DO_MKLF-O6xicguHCr66XMLqHJWFQnLTgOcQ8N9bVDLYJXQwpuYXVzvAQ0fbg8y3iQ"
+            //src="https://play-lh.googleusercontent.com/DO_MKLF-O6xicguHCr66XMLqHJWFQnLTgOcQ8N9bVDLYJXQwpuYXVzvAQ0fbg8y3iQ"
+            src="https://preview.redd.it/y2ka4anwb6w81.gif?format=png8&s=8d152d046b3e71c6c02d0ced470e9d28bc25f17a"
             alt=""
           />
-          FräschService
+          Fräsch<span className="color--primary">Service</span>
         </Link>
       </div>
       <ul>
