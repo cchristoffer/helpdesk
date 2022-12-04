@@ -18,9 +18,9 @@ app.use(express.json());
 //Enables url encoded bodies
 app.use(express.urlencoded({ extended: false }));
 
-app.get("/", (req, res) => {
-  res.status(200).json({ message: "Welcome to the Help desk api" });
-});
+// app.get("/", (req, res) => {
+//   res.status(200).json({ message: "Welcome to the Help desk api" });
+// });
 
 //Routes
 app.use("/api/users", require("./routes/userRoutes"));
