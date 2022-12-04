@@ -20,7 +20,7 @@ const getTickets = asyncHandler(async (req, res) => {
 
   //Om inga tickets?
 
-  res.status(200).json({ tickets });
+  res.status(200).json(tickets);
 });
 
 // @desc    Get user ticket
@@ -48,7 +48,7 @@ const getTicket = asyncHandler(async (req, res) => {
     throw new Error("Du är ej ägare av detta ärende");
   }
 
-  res.status(200).json({ ticket });
+  res.status(200).json(ticket);
 });
 
 // @desc    Create new tickets

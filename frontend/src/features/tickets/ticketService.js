@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "/api/tickets/";
+const API_URL = "/api/tickets";
 
 // Create new ticket
 const createTicket = async (ticketData, token) => {
@@ -15,8 +15,51 @@ const createTicket = async (ticketData, token) => {
   return response.data;
 };
 
+// Get all users tickets
+const getTickets = async (token) => {
+  const config = {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+  };
+
+  const response = await axios.get(API_URL, config);
+  return response.data;
+};
+
+// Get ticket by id
+const getTicket = async (ticketId, token) => {
+  const config = {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+  };
+
+  const response = await axios.get(API_URL + "/" + ticketId, config);
+  return response.data;
+};
+
+// Close ticket
+const closeTicket = async (ticketId, token) => {
+  const config = {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+  };
+
+  const response = await axios.put(
+    API_URL + "/" + ticketId,
+    { status: "Stängd" },
+    config
+  );
+  return response.data;
+};
+
 const ticketService = {
   createTicket,
+  getTickets,
+  getTicket,
+  closeTicket,
 };
 
 export default ticketService;
